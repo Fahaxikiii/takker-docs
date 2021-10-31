@@ -2,14 +2,18 @@ site_name: Takker Docs
 theme:
   name: material
   language: zh
+  logo: images/logo.png
+  favicon: images/favicon.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: white
       toggle:
         icon: material/weather-sunny
         name: 切换为深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: grey
       toggle:
         icon: material/weather-night
         name: 切换为浅色模式
