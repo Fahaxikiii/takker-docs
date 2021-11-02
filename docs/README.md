@@ -1,10 +1,15 @@
 ---
 home: true
-heroImage: /assets/images/logo.png
+heroImage: /images/logo.png
 heroText: Takker
 tagline: 一个多功能的QQ机器人
-actionText: 快速上手 →
-actionLink: /guide/
+actions:
+  - text: 快速上手 →
+    link: /guide/
+    type: primary
+  - text: 关于项目 →
+    link: /about/
+    type: secondary
 features:
 - title: 代码质量差
   details: 是的，您能想到的任何Shit Code都能在本项目中找到

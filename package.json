@@ -6,11 +6,16 @@
   "repository": "https://github.com/FYWinds/takker-docs",
   "author": "风屿 <i@windis.cn>",
   "license": "MIT",
-  "dependencies": {
-    "vuepress": "^1.8.2"
-  },
+  "dependencies": {},
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-pwa": "^2.0.0-beta.27",
+    "@vuepress/plugin-pwa-popup": "^2.0.0-beta.27",
+    "@vuepress/plugin-search": "^2.0.0-beta.27",
+    "@vuepress/plugin-shiki": "^2.0.0-beta.27",
+    "vuepress": "^2.0.0-beta.27"
   }
 }
