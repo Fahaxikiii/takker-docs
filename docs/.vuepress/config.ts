@@ -14,13 +14,26 @@ export default defineUserConfig<DefaultThemeOptions>({
             { text: "关于", link: '/about/' },
             // { text: "Github", link: 'https://github.com/FYWinds/takker' }
         ],
-        sidebar: 'auto',
+        sidebarDepth: 2,
+        sidebar: {
+            '/guide/': [
+                {
+                    text: '指南',
+                    children: [
+                        '/guide/README.md',
+                        '/guide/prepare.md',
+                        '/guide/install.md',
+                        '/guide/run.md'
+                    ]
+                }
+            ]
+        },
         logo: '/images/logo.png',
         icon: '/images/icons/favicon-32x32.png',
         lastUpdatedText: '最后更新',
         repo: 'FYWinds/takker',
         repoLabel: 'Github',
-        docsrepo: 'FYWinds/takker-docs',
+        docsRepo: 'FYWinds/takker-docs',
         docsBranch: 'master',
         docsDir: 'docs',
         editLinks: true,
@@ -58,8 +71,25 @@ export default defineUserConfig<DefaultThemeOptions>({
         }]
     ],
     head: [
-        ['link', { rel: 'icon', href: '/images/favicon-32x32.png' }],
+        [
+            'link',
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '16x16',
+                href: `/images/icons/favicon-16x16.png`,
+            },
+        ],
+        [
+            'link',
+            {
+                rel: 'icon',
+                type: 'image/png',
+                sizes: '32x32',
+                href: `/images/icons/favicon-32x32.png`,
+            },
+        ],
         ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
-        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+        ['meta', { name: 'theme-color', content: '#436161' }],
     ]
 });
