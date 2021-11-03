@@ -5,14 +5,13 @@ export default defineUserConfig<DefaultThemeOptions>({
     title: 'Takker Doc',
     description: '多功能QQ机器人 Takker 的文档',
     host: 'localhost',
-    port: 18000,
+    port: 12080,
     themeConfig: {
         navbar: [
             { text: '首页', link: '/' },
             { text: '指南', link: '/guide/' },
             { text: '插件', link: '/plugins/' },
             { text: "关于", link: '/about/' },
-            // { text: "Github", link: 'https://github.com/FYWinds/takker' }
         ],
         sidebarDepth: 2,
         sidebar: {
@@ -24,6 +23,16 @@ export default defineUserConfig<DefaultThemeOptions>({
                         '/guide/prepare.md',
                         '/guide/install.md',
                         '/guide/run.md'
+                    ]
+                }
+            ],
+            '/plugins/': [
+                {
+                    text: '插件',
+                    children: [
+                        'README.md',
+                        'perm.md',
+                        'plugin_manager.md'
                     ]
                 }
             ]
