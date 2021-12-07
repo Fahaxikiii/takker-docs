@@ -48,7 +48,7 @@ SUPERUSERS = list(set(SUPERUSERS))
 ## 运行
 
 ```bash
-poetry run bot.py
+poetry run python bot.py
 ```
 
 ::: tip 恭喜
